@@ -60,7 +60,7 @@ export default function Home() {
   
 
   // Welcome overlay fade-out
-  useEffect(() => {
+  useGSAP(() => {
     // Disable scroll right away
     document.body.style.overflow = 'hidden';
 

@@ -27,8 +27,8 @@ export default function Yearbook() {
 
   return (
     <div className='w-full h-screen flex justify-center items-center'>
-      <button className='downloadYearbook text-4xl font-main font-extralight cursor-pointer border-2 
-      border-[#ffffff55] px-7 py-5 rounded-[10rem]'>
+      <button className='downloadYearbook max-[400px]:text-base text-2xl sm:text-4xl font-main font-extralight cursor-pointer border-2 
+      border-[#ffffff55] px-7 py-5 mx-2 rounded-[10rem]'>
         <ShinyText text="DOWNLOAD YEARBOOK 2025" disabled={false} speed={4} className='custom-class' />
       </button>
     </div>
