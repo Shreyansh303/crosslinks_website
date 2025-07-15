@@ -59,26 +59,26 @@ export default function Home() {
   }, [trigger,buttonPressed])
   
 
-  // Welcome overlay fade-out
-  useGSAP(() => {
-    // Disable scroll right away
-    document.body.style.overflow = 'hidden';
+  // // Welcome overlay fade-out
+  // useGSAP(() => {
+  //   // Disable scroll right away
+  //   document.body.style.overflow = 'hidden';
 
-    // Start fade-out after short delay
-    const timeout = setTimeout(() => {
-      // Re-enable scroll just before animation starts
-      document.body.style.overflow = 'auto';
+  //   // Start fade-out after short delay
+  //   const timeout = setTimeout(() => {
+  //     // Re-enable scroll just before animation starts
+  //     document.body.style.overflow = 'auto';
 
-      gsap.to(overlayRef.current, {
-        opacity: 0,
-        duration: 0.6,
-        ease: 'power1.out',
-        onComplete: () => setShowOverlay(false)
-      });
-    }, 1000); // corresponds to your delay
+  //     gsap.to(overlayRef.current, {
+  //       opacity: 0,
+  //       duration: 0.6,
+  //       ease: 'power1.out',
+  //       onComplete: () => setShowOverlay(false)
+  //     });
+  //   }, 1000); // corresponds to your delay
 
-    return () => clearTimeout(timeout);
-  }, []);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -141,13 +141,13 @@ export default function Home() {
 
     <div>
 
-      {showOverlay && (
+      {/* {showOverlay && (
         <div
           ref={overlayRef}
           className="fixed top-0 left-0 w-full h-screen bg-black text-white flex items-center justify-center z-50">
           <h1 className=" text-2xl sm:text-5xl font-nexa-light">WELCOME</h1>
         </div>
-      )}
+      )} */}
 
       <div className="flex flex-col font-main mx-auto px-4 w-full max-w-[1280px]">
         {/* <Separator/> */}
