@@ -145,7 +145,7 @@ export default function Home() {
         <div
           ref={overlayRef}
           className="fixed top-0 left-0 w-full h-screen bg-black text-white flex items-center justify-center z-50">
-          <h1 className="text-5xl font-nexa-light">WELCOME</h1>
+          <h1 className=" text-2xl sm:text-5xl font-nexa-light">WELCOME</h1>
         </div>
       )}
 
