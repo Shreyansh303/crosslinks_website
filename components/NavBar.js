@@ -54,7 +54,7 @@ export const NavBar = () => {
 
         {/* Sidebar */}
         <div className={`absolute top-0 right-0 h-[96.5vh] glassmorphism p-10 pt-3 transition-transform duration-500 ease-in-out z-50
-          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-[108%]'} md:hidden flex flex-col gap-10 items-end`}
+          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-[120%]'} md:hidden flex flex-col gap-10 items-end`}
         >
 
           {/* Close Button */}
