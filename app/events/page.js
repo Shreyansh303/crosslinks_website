@@ -3,7 +3,7 @@ import { useTrigger } from '@/context/TriggerContext';
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react'
 
-export default function events() {
+export default function Events() {
 
   const {trigger, settrigger,buttonPressed, setbuttonPressed} = useTrigger();
   
@@ -20,7 +20,7 @@ export default function events() {
         }
       }
       
-    }, [trigger,buttonPressed])
+    }, [trigger, buttonPressed, router, settrigger, setbuttonPressed])
 
   return (
     <div>events</div>

@@ -4,7 +4,7 @@ import { useTrigger } from '@/context/TriggerContext'
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react'
 
-export default function yearbook() {
+export default function Yearbook() {
 
   // Navigation
 
@@ -23,7 +23,7 @@ export default function yearbook() {
         }
       }
       
-    }, [trigger,buttonPressed])
+    }, [trigger, buttonPressed, router, settrigger, setbuttonPressed])
 
   return (
     <div className='w-full h-screen flex justify-center items-center'>
