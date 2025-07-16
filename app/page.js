@@ -34,18 +34,23 @@ export default function Home() {
   const [showOverlay, setShowOverlay] = useState(true);
 
   function scrollTo(sectionRef) {
-    if (sectionRef.current) {
+  if (sectionRef.current) {
+
+    setTimeout(() => {
+      
       gsap.to(window, {
-        duration: 2, 
+        duration: 1.5,
         scrollTo: {
-          y: sectionRef.current.offsetTop, 
+          y: sectionRef.current.offsetTop,
           offsetY: 175,
           autoKill: true 
         },
-        ease: "power3.inOut"
+        ease: "power1.inOut",
       });
-    }
+
+    }, 100); 
   }
+}
 
   function headingReveal(headingRef) {
     const mySplitText = new SplitText(headingRef.current, {type: "chars"});
