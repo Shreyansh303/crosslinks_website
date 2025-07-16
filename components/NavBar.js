@@ -13,9 +13,9 @@ export const NavBar = () => {
 
   return (
     <nav ref={navBarRef} className='flex glassmorphism justify-between items-center px-5 py-3 font-nexa-light font-bold text-base 
-        mx-auto my-4 w-full max-w-[1200px] border-2 rounded-xl centered shadow-xl/35 shadow-[#1cd30c] z-50'>      
+        mx-auto max-[480px]:my-1 my-4 w-full max-w-[1200px] border-2 rounded-xl centered shadow-xl/35 shadow-[#1cd30c] z-50'>      
 
-        <div className="w-25"><img src="img/logo.png" alt="" /></div>
+        <div className="max-[480px]:w-18 w-25"><img src="img/logo.png" alt="" /></div>
         
         <ul className='hidden md:flex gap-8'>
             <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('home')}}>HOME</li>
@@ -46,28 +46,28 @@ export const NavBar = () => {
             onClick={() => setIsSidebarOpen(true)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              strokeWidth={1.5} stroke="currentColor" className="size-10">
+              strokeWidth={1.5} stroke="currentColor" className="max-[480px]:size-8 size-10">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </button>
         
 
         {/* Sidebar */}
-        <div className={`absolute top-0 right-0 h-[96.5vh] glassmorphism p-10 pt-3 transition-transform duration-500 ease-in-out z-50
-          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-[120%]'} md:hidden flex flex-col gap-10 items-end`}
+        <div className={`absolute top-0 right-0 h-[98.6vh] glassmorphism p-10 pt-3 transition-transform duration-500 ease-in-out z-50
+          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-[120%]'} md:hidden flex flex-col gap-5 items-end`}
         >
 
           {/* Close Button */}
           <button onClick={() => setIsSidebarOpen(false)}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              strokeWidth={1.5} stroke="currentColor" className="relative -right-6 size-10">
+              strokeWidth={1.5} stroke="currentColor" className="relative max-[480px]:-right-5 -right-6 max-[480px]:size-8 size-10 mb-10">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
 
           {/* Navigation Links */}
-          <div className='flex flex-col gap-10 text-lg sm:text-xl'>
-            <ul className='flex flex-col gap-10 items-start'>
+          <div className='flex flex-col gap-8 max-[480px]:text-base text-lg sm:text-xl'>
+            <ul className='flex flex-col gap-5 items-start'>
               <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300'
                 onClick={() => { settrigger(true); setbuttonPressed('home'); setIsSidebarOpen(false); }}>
                 HOME
@@ -93,7 +93,7 @@ export const NavBar = () => {
             </ul>
 
             {/* Join Button */}
-            <button className='listItem'>
+            <button>
               <GradientText
                 colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
                 animationSpeed={8}

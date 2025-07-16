@@ -27,6 +27,7 @@ export default function Home() {
 
   const aboutUsRef = useRef();
   const aboutUsTextRef = useRef();
+  const aboutUsImageRef = useRef();
   
   const eventsRef = useRef();
   
@@ -44,7 +45,7 @@ export default function Home() {
         duration: 1.5,
         scrollTo: {
           y: sectionRef.current.offsetTop,
-          offsetY: navBarHeight+110,
+          offsetY: navBarHeight+105,
           autoKill: false 
         },
         ease: "power1.inOut",
@@ -64,7 +65,7 @@ export default function Home() {
       ease: 'back.out',
       duration: 1,
       scrollTrigger: {
-          trigger: [headingRef.current],
+          trigger: headingRef.current,
           start: "top 100%",
           end: "top 20%",
           toggleActions: "restart none none none",
@@ -79,12 +80,26 @@ export default function Home() {
       { opacity: 0, y: 50 },
       { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
         scrollTrigger: {
-          trigger: [bodyRef.current],
-          start: "top 100%",
+          trigger: bodyRef.current,
+          start: "top 90%",
           end: "top 20%",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none none reverse",
         }}
     );
+  }
+
+  function imageReveal(imageRef) {
+    gsap.from(imageRef.current, {
+      xPercent: 150,
+      ease: 'power4.inOut',
+      duration: 1.5,
+      scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top 90%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        }
+    })
   }
 
   useEffect(() => {
@@ -135,6 +150,7 @@ export default function Home() {
 
     headingReveal(aboutUsRef)
     bodyReveal(aboutUsTextRef)
+    imageReveal(aboutUsImageRef)
 
     headingReveal(eventsRef)
 
@@ -174,7 +190,6 @@ export default function Home() {
       )}
 
       <div className="flex flex-col font-main mx-auto px-4 w-full max-w-[1280px]">
-        {/* <Separator/> */}
         
         <div ref={homeSectionRef} className="home flex justify-center items-center h-screen">
 
@@ -185,22 +200,27 @@ export default function Home() {
 
         </div>
 
+        {/* About Us  */}
 
-        <div ref={aboutUsSectionRef} className="aboutUs my-10">
+        <div ref={aboutUsSectionRef} className="aboutUs my-5">
 
-          <h1 id="aboutUs" ref={aboutUsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
+          <h1 id="aboutUs" ref={aboutUsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c] text-center">
             ABOUT US
           </h1>
 
-          <p ref={aboutUsTextRef} className="font-main text-xs sm:text-base md:text-xl text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid rerum modi, repellendus nam ipsa hic culpa incidunt eligendi, saepe deserunt adipisci ex tempore obcaecati id, fugiat laboriosam quae vitae vero blanditiis. Nobis vel mollitia laboriosam, reprehenderit sunt nam quo, hic, tempora quaerat totam error repellat voluptatum dolore dolorum explicabo nisi sequi? Veniam repudiandae eaque officiis dolore recusandae placeat porro exercitationem nisi dignissimos culpa provident adipisci, voluptas, rerum possimus qui optio quasi, voluptate illo dolores doloribus veritatis illum totam. Deleniti mollitia at quibusdam! Omnis animi ratione vero non laborum asperiores facere natus eos! Consectetur eaque quaerat ullam autem qui repellendus, eum voluptate aliquam impedit? Praesentium ipsam esse veniam omnis nobis placeat amet fugiat quisquam, sequi illum delectus accusantium nostrum unde non, ullam dicta. Veritatis velit eum enim voluptas alias delectus animi atque, sed veniam expedita voluptatum? Sequi dolor rem laborum corporis mollitia voluptatem, laudantium aperiam blanditiis voluptates sunt doloribus nam neque esse veritatis explicabo rerum provident unde voluptate sapiente incidunt asperiores atque ad. Nam molestiae nobis, veritatis temporibus soluta vero quos quia, nulla suscipit qui illo ad cumque ex ducimus nostrum reiciendis beatae error recusandae, harum vitae iure repellat? Dolor corrupti consectetur dolore, quibusdam ducimus iusto aut nesciunt velit veniam rem! Minima, delectus possimus cupiditate ex reiciendis, facere ullam, blanditiis nulla incidunt ad nobis atque! Aut ex nisi magni provident placeat voluptatibus sapiente maxime odit quod enim, nemo distinctio molestiae officiis minus, dignissimos earum possimus, est vel! Facilis quas ad asperiores laboriosam consectetur quis quasi eum, voluptas deserunt illo assumenda! Minus sit tempora hic vel nemo quis voluptate blanditiis iste iusto, dignissimos cumque fuga in facere sapiente quia? Voluptas iste iure obcaecati hic, mollitia rerum, quia ad perferendis harum illo est, repellendus omnis tempore. Nisi, ipsum.
-          </p>
+          <div className="flex flex-col my-2 gap-5 items-center justify-center">
+            <p ref={aboutUsTextRef} className="font-main font-light max-[480px]:text-xs text-base sm:text-lg md:text-xl/8 text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas vel porro illo amet sint tempore? Dolores error sapiente dolorum, corrupti obcaecati quos facere, cupiditate sequi, quisquam fugiat eius sit quia!
+            </p>
+
+            <div className="flex items-center justify-center overflow-x-hidden"><img ref={aboutUsImageRef} className="max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
+          </div>
 
         </div>
         
         <Separator/>
 
-        <div ref={eventsSectionRef} className="events flex flex-col items-center justify-center gap-10 my-10">
+        <div ref={eventsSectionRef} className="events flex flex-col items-center justify-center gap-10 my-5">
 
           <h1 ref={eventsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
             EVENTS
