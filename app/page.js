@@ -10,8 +10,9 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { useTrigger } from "@/context/TriggerContext";
 import Carousel from "@/components/Carousel";
 import GradientText from "@/components/GradientText";
+import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
 
 export default function Home() {
 
@@ -33,7 +34,40 @@ export default function Home() {
   const [showOverlay, setShowOverlay] = useState(true);
 
   function scrollTo(sectionRef) {
-    gsap.to(window, {duration: 2, scrollTo: {y: sectionRef.current, offsetY: 130, autoKill: true} })
+    gsap.to(window, {duration: 2, scrollTo: {y: sectionRef.current, offsetY: 175, autoKill: true} })
+  }
+
+  function headingReveal(headingRef) {
+    const mySplitText = new SplitText(headingRef.current, {type: "chars"});
+    const chars = mySplitText.chars;
+
+    gsap.from(chars, {
+      yPercent: 130,
+      stagger: 0.02,
+      ease: 'back.out',
+      duration: 1,
+      scrollTrigger: {
+          trigger: [headingRef.current],
+          start: "top 100%",
+          end: "top 20%",
+          toggleActions: "restart none none none",
+        }
+    })
+  }
+
+  function bodyReveal(bodyRef) {
+
+    gsap.fromTo(
+      bodyRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
+        scrollTrigger: {
+          trigger: [bodyRef.current],
+          start: "top 100%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        }}
+    );
   }
 
   useEffect(() => {
@@ -81,41 +115,14 @@ export default function Home() {
   }, []);
 
   useGSAP(() => {
-    gsap.fromTo(
-      [aboutUsRef.current, aboutUsTextRef.current],
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
-        scrollTrigger: {
-          trigger: [aboutUsTextRef.current],
-          start: "top 100%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
-        }}
-    );
 
-    gsap.fromTo(
-      [eventsRef.current],
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
-        scrollTrigger: {
-          trigger: [eventsRef.current],
-          start: "top 100%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
-        }}
-    );
+    headingReveal(aboutUsRef)
+    bodyReveal(aboutUsTextRef)
 
-    gsap.fromTo(
-      [teamRef.current],
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
-        scrollTrigger: {
-          trigger: [teamRef.current],
-          start: "top 100%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
-        }}
-    );
+    headingReveal(eventsRef)
+
+    headingReveal(teamRef)
+
 
   }, []);
 
