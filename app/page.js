@@ -45,7 +45,7 @@ export default function Home() {
         scrollTo: {
           y: sectionRef.current.offsetTop,
           offsetY: navBarHeight+110,
-          autoKill: true 
+          autoKill: false 
         },
         ease: "power1.inOut",
       });
