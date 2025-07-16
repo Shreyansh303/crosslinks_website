@@ -34,7 +34,17 @@ export default function Home() {
   const [showOverlay, setShowOverlay] = useState(true);
 
   function scrollTo(sectionRef) {
-    gsap.to(window, {duration: 2, scrollTo: {y: sectionRef.current, offsetY: 175, autoKill: true} })
+    if (sectionRef.current) {
+      gsap.to(window, {
+        duration: 2, 
+        scrollTo: {
+          y: sectionRef.current.offsetTop, 
+          offsetY: 175,
+          autoKill: true 
+        },
+        ease: "power3.inOut"
+      });
+    }
   }
 
   function headingReveal(headingRef) {
