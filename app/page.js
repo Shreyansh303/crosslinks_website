@@ -16,9 +16,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
 
 export default function Home() {
 
-  const {trigger,settrigger, buttonPressed, setbuttonPressed} = useTrigger();
+  const {trigger,settrigger, buttonPressed, setbuttonPressed, navBarRef} = useTrigger();
 
   const overlayRef = useRef();
+
   const homeSectionRef = useRef();
   const aboutUsSectionRef = useRef();
   const eventsSectionRef = useRef();
@@ -34,15 +35,16 @@ export default function Home() {
   const [showOverlay, setShowOverlay] = useState(true);
 
   function scrollTo(sectionRef) {
-  if (sectionRef.current) {
-
+  if (!navBarRef.current || !sectionRef.current) {
+    return
+  }
     setTimeout(() => {
-      
+      const navBarHeight = navBarRef.current.offsetHeight;
       gsap.to(window, {
         duration: 1.5,
         scrollTo: {
           y: sectionRef.current.offsetTop,
-          offsetY: 175,
+          offsetY: navBarHeight+110,
           autoKill: true 
         },
         ease: "power1.inOut",
@@ -50,7 +52,7 @@ export default function Home() {
 
     }, 100); 
   }
-}
+
 
   function headingReveal(headingRef) {
     const mySplitText = new SplitText(headingRef.current, {type: "chars"});

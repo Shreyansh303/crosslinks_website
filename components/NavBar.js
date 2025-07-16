@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 export const NavBar = () => {
 
-  const { settrigger, setbuttonPressed } = useTrigger();
+  const { settrigger, setbuttonPressed, navBarRef } = useTrigger();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <nav className='flex glassmorphism justify-between items-center px-5 py-3 font-nexa-light font-bold text-base 
+    <nav ref={navBarRef} className='flex glassmorphism justify-between items-center px-5 py-3 font-nexa-light font-bold text-base 
         mx-auto my-4 w-full max-w-[1200px] border-2 rounded-xl centered shadow-xl/35 shadow-[#1cd30c] z-50'>      
 
         <div className="w-25"><img src="img/logo.png" alt="" /></div>
