@@ -11,6 +11,7 @@ import { useTrigger } from "@/context/TriggerContext";
 import Carousel from "@/components/Carousel";
 import GradientText from "@/components/GradientText";
 import { SplitText } from "gsap/SplitText";
+import CardStack from "@/components/CardStack";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
 
@@ -45,7 +46,7 @@ export default function Home() {
         duration: 1.5,
         scrollTo: {
           y: sectionRef.current.offsetTop,
-          offsetY: navBarHeight+105,
+          offsetY: navBarHeight+95,
           autoKill: false 
         },
         ease: "power1.inOut",
@@ -81,7 +82,7 @@ export default function Home() {
       { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
         scrollTrigger: {
           trigger: bodyRef.current,
-          start: "top 90%",
+          start: "top 95%",
           end: "top 20%",
           toggleActions: "restart none none reverse",
         }}
@@ -95,7 +96,7 @@ export default function Home() {
       duration: 1.5,
       scrollTrigger: {
           trigger: imageRef.current,
-          start: "top 90%",
+          start: "top 95%",
           end: "top 20%",
           toggleActions: "play none none reverse",
         }
@@ -154,6 +155,32 @@ export default function Home() {
 
     headingReveal(eventsRef)
 
+    const pinWrapper = eventsRef.current.parentElement;
+
+    ScrollTrigger.create({
+      trigger: eventsSectionRef.current,
+      start: 'top 14%',
+      end: 'bottom 50%',
+      pin: pinWrapper,
+      pinSpacing: false,
+      
+      // ✅ Set position WITHOUT changing the width
+      onEnter: () => gsap.set(pinWrapper, { 
+        left: '50%', 
+        xPercent: -50 
+      }),
+
+      onLeave: () => gsap.set(pinWrapper, { clearProps: 'left,transform' }),
+
+      // ✅ Set position WITHOUT changing the width
+      onEnterBack: () => gsap.set(pinWrapper, { 
+        left: '50%', 
+        xPercent: -50 
+      }),
+      
+      onLeaveBack: () => gsap.set(pinWrapper, { clearProps: 'left,transform' }),
+    });
+
     headingReveal(teamRef)
 
 
@@ -175,6 +202,25 @@ export default function Home() {
       text: "SCRIBBLE DAY",
       desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
     },
+  ];
+
+  const cards = [
+
+    { image: "img/slide1.png", 
+      title: "NSUTTHON",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+    },
+
+    { image: "img/slide2.jpg", 
+      title: "MR. & MS. MOKSHA",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
+    },
+
+    { image: "img/slide3.jpg", 
+      title: "SCRIBBLE DAY",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+    },
+
   ];
 
   return (
@@ -220,23 +266,20 @@ export default function Home() {
         
         <Separator/>
 
-        <div ref={eventsSectionRef} className="events flex flex-col items-center justify-center gap-10 my-5">
-
-          <h1 ref={eventsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
-            EVENTS
-          </h1>
-
-          <div className="carousel">
-
-            <Carousel slides={slides} />
-
+        <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center gap-15 mt-15 mb-10">
+          <div className="text-center"> 
+            <h1 ref={eventsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c] inline-block">
+              EVENTS
+            </h1>
           </div>
+
+          <CardStack cards={cards} topOffset="13.5rem"/>
 
         </div>
         
         <Separator/>
 
-        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-10 my-10">
+        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-5 my-10">
 
           <h1 ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
             TEAM
