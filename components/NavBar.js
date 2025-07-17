@@ -13,7 +13,7 @@ export const NavBar = () => {
 
   return (
     <nav ref={navBarRef} className='flex glassmorphism justify-between items-center px-5 py-3 font-nexa-light font-bold text-base 
-        mx-auto max-[480px]:my-1 my-4 w-full max-w-[1200px] centered z-50'>      
+        mx-auto max-[480px]:my-1 my-4 w-full max-w-[1200px] border-2 rounded-xl centered shadow-xl/35 shadow-[#1cd30c] z-50'>      
 
         <div className="max-[480px]:w-18 w-25"><img src="img/logo.png" alt="" /></div>
         
