@@ -46,7 +46,7 @@ export default function Home() {
         duration: 1.5,
         scrollTo: {
           y: sectionRef.current.offsetTop,
-          offsetY: navBarHeight+95,
+          offsetY: navBarHeight+50,
           autoKill: false 
         },
         ease: "power1.inOut",
@@ -64,12 +64,13 @@ export default function Home() {
       yPercent: 130,
       stagger: 0.02,
       ease: 'back.out',
-      duration: 1,
+      duration: 0.5,
       scrollTrigger: {
           trigger: headingRef.current,
-          start: "top 100%",
+          start: "top 95%",
           end: "top 20%",
-          toggleActions: "restart none none none",
+          toggleActions: "restart none none reverse",
+
         }
     })
   }
@@ -79,7 +80,7 @@ export default function Home() {
     gsap.fromTo(
       bodyRef.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out', 
+      { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', 
         scrollTrigger: {
           trigger: bodyRef.current,
           start: "top 95%",
@@ -93,7 +94,7 @@ export default function Home() {
     gsap.from(imageRef.current, {
       xPercent: 150,
       ease: 'power4.inOut',
-      duration: 1.5,
+      duration: 2,
       scrollTrigger: {
           trigger: imageRef.current,
           start: "top 95%",
@@ -266,20 +267,20 @@ export default function Home() {
         
         <Separator/>
 
-        <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center gap-15 mt-15 mb-10">
+        <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center gap-10 mt-10 mb-10">
           <div className="text-center"> 
             <h1 ref={eventsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c] inline-block">
               EVENTS
             </h1>
           </div>
 
-          <CardStack cards={cards} topOffset="13.5rem"/>
+          <CardStack cards={cards} topOffset="12rem"/>
 
         </div>
         
         <Separator/>
 
-        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-5 my-10">
+        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-5 my-5">
 
           <h1 ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
             TEAM
