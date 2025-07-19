@@ -62,25 +62,25 @@ export const Footer = () => {
 
     <div className='mx-auto px-4 w-full max-w-[1280px] '>
 
-        <div ref={reachOutRef} className="reachOut flex flex-col max-[480px]:gap-5 gap-8 my-5 max-[480px]:mt-0 max-[480px]:mb-10">
-            <h1  className='max-[321px]:text-2xl max-[321px]:text-center max-[480px]:text-3xl max-[480px]:tracking-normal text-4xl sm:text-5xl md:text-6xl font-greater-theory tracking-wide'>REACH OUT TO US</h1>
+        <div ref={reachOutRef} className="reachOut flex flex-col max-[480px]:gap-3 gap-10 my-5 max-[480px]:mt-0 max-[480px]:mb-5">
+            <h1  className='max-[321px]:text-2xl max-[321px]:text-center max-[480px]:text-3xl max-[480px]:text-center max-[480px]:tracking-normal text-4xl sm:text-5xl md:text-6xl font-greater-theory tracking-wide'>REACH OUT TO US</h1>
 
             <div className='contactsocialContainer flex flex-row max-[480px]:gap-5 max-[480px]:flex-col max-[480px]:items-center justify-between'>
                 
-                <div className="contactInfo flex flex-col gap-2 max-[480px]:items-center font-main font-extralight text-base sm:text-lg md:text-xl ">
+                <div className="contactInfo flex flex-col gap-3 max-[480px]:gap-0 max-[480px]:items-center font-main font-extralight max-[480px]:text-[12px] text-base sm:text-lg md:text-xl ">
                 
-                    <div className='flex items-center gap-4'>
-                        <img className='invert w-auto' src="/icons/email.svg" alt="" />crosslinks@nsut.ac.in
+                    <div className='flex items-center gap-4 max-[480px]:gap-2'>
+                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/email.svg" alt="" />crosslinks@nsut.ac.in
                     
                         <button onClick={handleCopy} className='flex items-center max-[480px]:hidden gap-1.5 px-5 font-sans sm:text-base'>Copy<img  className='cursor-pointer invert w-4 pt-0.5' src={copyButton[copyImg]} alt="" title='Copy to Clipboard' /></button>
                     </div>
 
-                    <div className='flex items-center gap-4'>
-                        <img className='invert w-auto' src="/icons/phone.svg" alt="" />+91 9999355552
+                    <div className='flex items-center gap-4 max-[480px]:gap-2'>
+                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/phone.svg" alt="" />+91 9999355552
                     </div>
 
-                    <div className='flex items-center gap-4'>
-                        <img className='invert w-auto' src="/icons/location.svg" alt="" />Sector 3, Dwarka, Delhi, 110078
+                    <div className='flex items-center gap-4 max-[480px]:gap-2'>
+                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/location.svg" alt="" />Sector 3, Dwarka, Delhi, 110078
                     </div>
 
                 </div>
@@ -141,7 +141,7 @@ export const Footer = () => {
 
             </div>
 
-            <div className='flex justify-end text-right  max-[480px]:text-[9px] text-[10px] sm:text-xs text-[#9a9a9a]'>
+            <div className='flex justify-end text-right max-[480px]:mt-5 max-[480px]:text-[8px] text-[10px] sm:text-xs text-[#9a9a9a]'>
                 <h1 >Copyright ©2025 Crosslinks NSUT - All Rights reserved • Privacy policy
                     <br />
                     Developed by Shreyansh Jain
