@@ -30,7 +30,7 @@ const Card = ({ image, title, description, index, topOffset }) => {
         </h2>
       </div>
       <div className="flex w-full items-center px-6 py-5">
-        <p className="text-white text-justify max-[391px]:text-[10px] max-[480px]:text-sm text-base md:text-lg">{description}</p>
+        <p className="text-white text-justify max-[391px]:text-xs max-[480px]:text-sm text-base md:text-lg">{description}</p>
       </div>
     </div>
   );

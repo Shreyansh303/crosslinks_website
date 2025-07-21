@@ -61,6 +61,7 @@ export default function Home() {
     const chars = mySplitText.chars;
 
     gsap.from(chars, {
+      opacity: 0,
       yPercent: 130,
       stagger: 0.02,
       ease: 'back.out',
@@ -70,6 +71,10 @@ export default function Home() {
           start: "top 95%",
           end: "top 20%",
           toggleActions: "restart none none reverse",
+
+          onEnter: () => {
+            gsap.set(headingRef.current, {opacity: 1})
+          }
 
         }
     })
@@ -94,7 +99,7 @@ export default function Home() {
     gsap.from(imageRef.current, {
       xPercent: 150,
       ease: 'power4.inOut',
-      duration: 2,
+      duration: 1.8,
       scrollTrigger: {
           trigger: imageRef.current,
           start: "top 95%",
@@ -190,18 +195,27 @@ export default function Home() {
   const slides = [
 
     { image: "img/slide1.png", 
-      text: "NSUTTHON",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      name: "MITHILESH KOROCHIKAR",
+      position: "PRESIDENT",
+      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
     },
 
     { image: "img/slide2.jpg", 
-      text: "MR. & MS. MOKSHA",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
+      name: "MITHILESH KOROCHIKAR",
+      position: "PRESIDENT",
+      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
     },
 
     { image: "img/slide3.jpg", 
-      text: "SCRIBBLE DAY",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      name: "MITHILESH KOROCHIKAR",
+      position: "VICE PRESIDENT",
+      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+    },
+
+    { image: "img/slide3.jpg", 
+      name: "MITHILESH KOROCHIKAR",
+      position: "VICE PRESIDENT",
+      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
     },
   ];
 
@@ -240,7 +254,7 @@ export default function Home() {
         
         <div ref={homeSectionRef} className="home flex justify-center items-center h-screen">
 
-          <div className="title flex flex-col gap-1 items-center justify-center">
+          <div className="title flex flex-col gap-1 max-[391px]:gap-0 items-center justify-center">
             <h1 className="font-greater-theory max-[400px]:text-4xl font-light text-5xl sm:text-6xl md:text-8xl ">CROSSLINKS</h1>
             <h2 className="font-nexa-light max-[400px]:text-base max-[400px]:tracking-[8] text-xl tracking-[10] sm:text-2xl md:text-3xl md:tracking-[18]">THE FACE OF NSUT</h2>
           </div>
@@ -280,17 +294,14 @@ export default function Home() {
         
         <Separator/>
 
-        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-5 my-5">
+        <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-10 sm:gap-15 my-5">
 
-          <h1 ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c]">
-            TEAM
-          </h1>
+          <span ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl text-center font-greater-theory text-[#1cd30c]">
+            WORDS FROM MEMBERS
+          </span>
 
-          <div className="carousel">
+          <Carousel slides={slides} />
 
-            <Carousel slides={slides} />
-
-          </div>
           
         </div>
         

@@ -6,7 +6,10 @@ import GradientText from './GradientText';
 import Link from 'next/link';
 
 const Carousel = ({ slides }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    containScroll: 'trimSnaps',
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
   const [isHovered, setIsHovered] = useState(false);
@@ -23,10 +26,27 @@ const Carousel = ({ slides }) => {
 
     const autoplay = setInterval(() => {
       if (!isHovered) emblaApi.scrollNext();
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(autoplay);
   }, [emblaApi, isHovered]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const resizeViewportToSlide = () => {
+      const viewport = emblaRef.current;
+      const selectedSlide = viewport?.querySelectorAll('.embla__slide')?.[emblaApi.selectedScrollSnap()];
+      if (viewport && selectedSlide) {
+        const slideHeight = selectedSlide.offsetHeight;
+        viewport.style.height = `${slideHeight}px`;
+      }
+    };
+
+    emblaApi.on('select', resizeViewportToSlide);
+    resizeViewportToSlide(); // Initial height set
+  }, [emblaApi]);
+
 
   return (
     <div
@@ -50,27 +70,46 @@ const Carousel = ({ slides }) => {
 
                 {/* Embla Carousel */}
                 <div className="overflow-hidden w-full max-w-5xl" ref={emblaRef}>
-                    <div className="flex">
-                    {slides.map((slide, index) => (
-                        <div className="flex-[0_0_100%] px-2" key={index}>
-                        <div className="relative w-full rounded-2xl overflow-hidden border-2 border-[#ffffff55] hover:border-[#1cd30c] transition duration-300 cursor-grab ">
-                            <img
-                            src={slide.image}
-                            alt={slide.text}
-                            className="w-full h-full object-cover"
-                            />
-                            <div className="absolute inset-0 bg-black/60" />
-                            <div className="absolute inset-0 flex items-start justify-start pl-6 pt-4">
-                                <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-greater-theory">{slide.text}</h2>
+                <div className="flex w-full">
+                  {slides.map((slide, index) => (
+                    <div
+                      key={index}
+                      className="flex-[0_0_100%] px-2 min-w-0" // <-- KEY FIX HERE
+                    >
+                      <div className="relative w-full rounded-2xl overflow-hidden border-2 border-[#ffffff55] hover:border-[#1cd30c] transition duration-300 cursor-grab">
+                        <div className="headingContainer flex flex-col justify-between items-center w-full py-5">
+                          {/* imageWrapper */}
+                          <div className="imageWrapper flex w-full justify-center items-center">
+                            <div className="imageCircle w-30 h-30 md:w-40 md:h-40 p-3">
+                              <img
+                                src={slide.image}
+                                alt={slide.name}
+                                className="w-full h-full rounded-full object-cover"
+                              />
                             </div>
-                            <div className="absolute inset-0 flex items-end justify-center px-6 pb-4">
-                                <span className="text-white text-[10px] sm:text-sm md:text-base text-justify font-main">{slide.desc}</span>
-                            </div>
+                          </div>
+
+                          {/* credentialsWrapper */}
+                          <div className="credentialsWrapper flex flex-col md:gap-1 w-full items-center justify-center p-5">
+                            <h1 className="text-white text-xl/4.5 sm:text-2xl md:text-3xl/7 text-center font-greater-theory ">
+                              {slide.name}
+                            </h1>
+                            <h2 className="text-white text-base sm:text-lg md:text-xl tracking-[6] text-center font-nexa-light">
+                              {slide.position}
+                            </h2>
+                          </div>
+
+                          {/* Message */}
+                          <span className="text-white text-xs sm:text-sm md:text-base text-justify font-main px-5 w-full">
+                            {slide.message}
+                          </span>
                         </div>
-                        </div>
-                    ))}
+                      </div>
                     </div>
+                  ))}
                 </div>
+              </div>
+
 
                 <button
                 onClick={scrollNext}
@@ -98,7 +137,9 @@ const Carousel = ({ slides }) => {
         ))}
       </div>
 
-      <Link href='/events'>
+
+      {/* Learn More button */}
+      {/* <Link href='/events'>
         <button className='mt-10 font-nexa-light font-bold text-base'>
                               
           <GradientText
@@ -111,7 +152,7 @@ const Carousel = ({ slides }) => {
           </GradientText>
 
         </button>
-      </Link>
+      </Link> */}
 
       
 
