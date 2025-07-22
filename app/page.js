@@ -31,6 +31,8 @@ export default function Home() {
   const aboutUsImageRef = useRef();
   
   const eventsRef = useRef();
+
+  const galleryRef = useRef();
   
   const teamRef = useRef();
 
@@ -187,6 +189,8 @@ export default function Home() {
       onLeaveBack: () => gsap.set(pinWrapper, { clearProps: 'left,transform' }),
     });
 
+    headingReveal(galleryRef)
+
     headingReveal(teamRef)
 
 
@@ -254,7 +258,7 @@ export default function Home() {
         
         <div ref={homeSectionRef} className="home flex justify-center items-center h-screen">
 
-          <div className="title flex flex-col gap-1 max-[391px]:gap-0 items-center justify-center">
+          <div className="title flex flex-col gap-0 sm:gap-1  items-center justify-center">
             <h1 className="font-greater-theory max-[400px]:text-4xl font-light text-5xl sm:text-6xl md:text-8xl ">CROSSLINKS</h1>
             <h2 className="font-nexa-light max-[400px]:text-base max-[400px]:tracking-[8] text-xl tracking-[10] sm:text-2xl md:text-3xl md:tracking-[18]">THE FACE OF NSUT</h2>
           </div>
@@ -274,12 +278,14 @@ export default function Home() {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas vel porro illo amet sint tempore? Dolores error sapiente dolorum, corrupti obcaecati quos facere, cupiditate sequi, quisquam fugiat eius sit quia!
             </p>
 
-            <div className="flex items-center justify-center overflow-x-hidden"><img ref={aboutUsImageRef} className="max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
+            <div className="flex items-center justify-center overflow-x-hidden"><img ref={aboutUsImageRef} loading="lazy" className="max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
           </div>
 
         </div>
         
         <Separator/>
+
+        {/* Events */}
 
         <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center gap-10 mt-10 mb-10">
           <div className="text-center"> 
@@ -294,6 +300,22 @@ export default function Home() {
         
         <Separator/>
 
+        {/* Gallery */}
+
+        <div className="events flex flex-col items-center justify-center gap-10 my-5">
+
+          <h1 ref={galleryRef} className="text-4xl sm:text-5xl md:text-6xl text-center font-greater-theory text-[#1cd30c]">
+            GALLERY
+          </h1>
+
+          
+
+        </div>
+        
+        <Separator/>
+
+        {/* Words from members */}
+
         <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-10 sm:gap-15 my-5">
 
           <span ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl text-center font-greater-theory text-[#1cd30c]">
@@ -302,7 +324,6 @@ export default function Home() {
 
           <Carousel slides={slides} />
 
-          
         </div>
         
         <Separator/>

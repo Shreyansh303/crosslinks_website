@@ -21,6 +21,7 @@ const Card = ({ image, title, description, index, topOffset }) => {
       <div className="relative w-full aspect-[16/9]">
         <img
           src={image}
+          loading="lazy"
           alt={title}
           className="absolute h-full w-full object-cover"
         />
