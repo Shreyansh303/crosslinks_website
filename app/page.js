@@ -12,6 +12,8 @@ import Carousel from "@/components/Carousel";
 import GradientText from "@/components/GradientText";
 import { SplitText } from "gsap/SplitText";
 import CardStack from "@/components/CardStack";
+import InfiniteMarquee from "@/components/InfiniteMarquee";
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText)
 
@@ -242,6 +244,16 @@ export default function Home() {
 
   ];
 
+  const sampleImages = [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop",
+  ];
+
   return (
 
     <div>
@@ -258,7 +270,7 @@ export default function Home() {
         
         <div ref={homeSectionRef} className="home flex justify-center items-center h-screen">
 
-          <div className="title flex flex-col gap-0 sm:gap-1  items-center justify-center">
+          <div className="title flex flex-col gap-0 sm:gap-1 items-center justify-center">
             <h1 className="font-greater-theory max-[400px]:text-4xl font-light text-5xl sm:text-6xl md:text-8xl ">CROSSLINKS</h1>
             <h2 className="font-nexa-light max-[400px]:text-base max-[400px]:tracking-[8] text-xl tracking-[10] sm:text-2xl md:text-3xl md:tracking-[18]">THE FACE OF NSUT</h2>
           </div>
@@ -302,13 +314,13 @@ export default function Home() {
 
         {/* Gallery */}
 
-        <div className="events flex flex-col items-center justify-center gap-10 my-5">
+        <div className="gallery flex flex-col items-center justify-center gap-5 sm:gap-10 my-5">
 
           <h1 ref={galleryRef} className="text-4xl sm:text-5xl md:text-6xl text-center font-greater-theory text-[#1cd30c]">
             GALLERY
           </h1>
 
-          
+          <InfiniteMarquee images={sampleImages} speed={40} />
 
         </div>
         
