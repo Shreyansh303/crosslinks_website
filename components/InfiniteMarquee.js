@@ -40,7 +40,6 @@ const InfiniteMarquee = ({ images = [], speed = 25 }) => {
                 <img
                   src={src}
                   alt={`Marquee item ${index + 1}`}
-                  loading="lazy"
                   className="w-full h-full object-cover"
                   // Add an onerror fallback for broken image links
                   onError={(e) => {
