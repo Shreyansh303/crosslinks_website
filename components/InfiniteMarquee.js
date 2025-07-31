@@ -38,6 +38,7 @@ const InfiniteMarquee = ({ images = [], speed = 25 }) => {
             <div key={index} className="flex-shrink-0 p-3">
               <div className="aspect-[4/3] w-64 sm:w-80 md:w-96 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-200 hover:scale-105 border-2 border-transparent hover:border-[#1cd30c]">
                 <img
+                  loading="lazy"
                   src={src}
                   alt={`Marquee item ${index + 1}`}
                   className="w-full h-full object-cover"

@@ -286,11 +286,11 @@ export default function Home() {
           </h1>
 
           <div className="flex flex-col my-2 gap-5 items-center justify-center">
-            <p ref={aboutUsTextRef} className="font-main font-light max-[480px]:text-xs text-base sm:text-lg md:text-xl/8 text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas vel porro illo amet sint tempore? Dolores error sapiente dolorum, corrupti obcaecati quos facere, cupiditate sequi, quisquam fugiat eius sit quia!
+            <p ref={aboutUsTextRef} className="font-main font-light max-[480px]:text-xs text-base sm:text-lg md:text-xl/7 text-center">
+              Crosslinks is the Student & Public Relations Society of NSUT. It is one of the most well-known societies of our college. It brings to you everything there is to know about NSUT and puts our institution on a national platform. Whether it's about connecting students and authorities together, promoting the college, or organizing numerous events and fests throughout the year, Crosslinks does it all.
             </p>
 
-            <div className="flex items-center justify-center overflow-x-hidden"><img ref={aboutUsImageRef} loading="lazy" className="max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
+            <div className="flex items-center justify-center max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto overflow-x-hidden"><img ref={aboutUsImageRef} className="w-full h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
           </div>
 
         </div>
