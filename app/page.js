@@ -103,7 +103,7 @@ export default function Home() {
     gsap.from(imageRef.current, {
       xPercent: 150,
       ease: 'power4.inOut',
-      duration: 1.8,
+      duration: 1.2,
       scrollTrigger: {
           trigger: imageRef.current,
           start: "top 95%",
@@ -272,7 +272,7 @@ export default function Home() {
 
           <div className="title flex flex-col gap-0 sm:gap-1 items-center justify-center">
             <h1 className="font-greater-theory max-[400px]:text-4xl font-light text-5xl sm:text-6xl md:text-8xl ">CROSSLINKS</h1>
-            <h2 className="font-nexa-light max-[400px]:text-base max-[400px]:tracking-[8] text-xl tracking-[10] sm:text-2xl md:text-3xl md:tracking-[18]">THE FACE OF NSUT</h2>
+            <h2 className="font-nexa-light max-[400px]:text-xs max-[400px]:tracking-[8] text-xl tracking-[10] sm:text-2xl md:text-3xl md:tracking-[18]">THE FACE OF NSUT</h2>
           </div>
 
         </div>
@@ -286,11 +286,11 @@ export default function Home() {
           </h1>
 
           <div className="flex flex-col my-2 gap-5 items-center justify-center">
-            <p ref={aboutUsTextRef} className="font-main font-light max-[480px]:text-xs text-base sm:text-lg md:text-xl/7 text-center">
+            <p ref={aboutUsTextRef} className="font-main font-light max-[480px]:text-xs text-base sm:text-lg md:text-xl/7 text-justify">
               Crosslinks is the Student & Public Relations Society of NSUT. It is one of the most well-known societies of our college. It brings to you everything there is to know about NSUT and puts our institution on a national platform. Whether it&apos;s about connecting students and authorities together, promoting the college, or organizing numerous events and fests throughout the year, Crosslinks does it all.
             </p>
-
-            <div className="flex items-center justify-center max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto overflow-x-hidden"><img ref={aboutUsImageRef} className="w-full h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
+            
+            <div className=" flex items-center justify-center max-[480px]:w-95/100 w-4/5 md:w-3/5 h-auto overflow-x-hidden"><img ref={aboutUsImageRef} className="w-full h-auto border-3 border-[#1cd30c] rounded-xl" src="/img/CROSSLINKS.jpg" alt="" /></div>
           </div>
 
         </div>
@@ -299,7 +299,7 @@ export default function Home() {
 
         {/* Events */}
 
-        <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center gap-10 mt-10 mb-10">
+        <div ref={eventsSectionRef} className="events w-full flex flex-col items-center justify-center max-[391px]:gap-5 gap-10 my-5">
           <div className="text-center"> 
             <h1 ref={eventsRef} className="text-4xl sm:text-5xl md:text-6xl font-greater-theory text-[#1cd30c] inline-block">
               EVENTS

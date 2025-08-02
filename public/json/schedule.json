@@ -1,0 +1,217 @@
+[
+    {
+        "name": "CROSSLINKS",
+        "date": "4th AUGUST, 4:00 P.M.",
+        "venue": "APJ 11"
+    },
+    {
+        "name": "E CELL",
+        "date": "4th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "D'CODE",
+        "date": "4th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "DEBSOC",
+        "date": "4th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "THE DEBUGGING SOCIETY",
+        "date": "4th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "DEVCOMM",
+        "date": "5th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "AXIOM",
+        "date": "5th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "CANVAS",
+        "date": "5th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "IEEE",
+        "date": "5th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "KALPANA",
+        "date": "5th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "THE ALLIANCE",
+        "date": "5th AUGUST, 4:00 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "HUMANICA",
+        "date": "5th AUGUST, 4:30 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "COE HTHTRF",
+        "date": "5th AUGUST, 5:00 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "DHIRAH",
+        "date": "5th AUGUST, 5:30 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "TATSAM",
+        "date": "5th AUGUST, 6:00 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "VENATUS",
+        "date": "6th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "TDR",
+        "date": "6th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "SUBHASHA",
+        "date": "6th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "MIRAGE",
+        "date": "6th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "MUDRAKALA",
+        "date": "6th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "NAKSHATRA",
+        "date": "6th AUGUST, 3:30 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "180DC",
+        "date": "6th AUGUST, 4:00 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "IGTS",
+        "date": "6th AUGUST, 4:30 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "ASME NSUT",
+        "date": "6th AUGUST, 5:00 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "FES",
+        "date": "6th AUGUST, 5:30 P.M.",
+        "venue": "Mini Audi"
+    },
+    {
+        "name": "SHATRANJ",
+        "date": "7th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "AAGAAZ",
+        "date": "7th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "JUNOON",
+        "date": "7th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "CAPELLA",
+        "date": "7th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "ENACTUS",
+        "date": "7th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "NATIONAL CADETS CORPS (NCC)",
+        "date": "7th AUGUST, 4:00 P.M.",
+        "venue": "APJ 11"
+    },
+    {
+        "name": "TFC",
+        "date": "8th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "INTAGLIOS",
+        "date": "8th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "CLITCH",
+        "date": "8th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "VAJRA",
+        "date": "8th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "SHAKESJEER",
+        "date": "8th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "ASHWAMEDH (STREET)",
+        "date": "11th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "ASHWAMEDH (STAGE)",
+        "date": "11th AUGUST, 4:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "NSUT QUIZ CLUB",
+        "date": "11th AUGUST, 5:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "ARES",
+        "date": "11th AUGUST, 5:30 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "GDSC",
+        "date": "11th AUGUST, 6:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "SPIC MACAY",
+        "date": "12th AUGUST, 2:00 P.M.",
+        "venue": "Main Audi"
+    },
+    {
+        "name": "CRESENDO",
+        "date": "12th AUGUST, 4:00 P.M.",
+        "venue": "Main Audi"
+    }
+]

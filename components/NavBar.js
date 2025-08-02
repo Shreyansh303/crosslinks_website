@@ -22,8 +22,11 @@ export const NavBar = () => {
             <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('aboutUs')}}>ABOUT US</li>
             <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('events')}}>EVENTS</li>
             <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('team')}}>TEAM</li>
-            <Link href="/yearbook">
+            {/* <Link href="/yearbook">
               <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('yearbook')}}>YEARBOOK</li>
+            </Link> */}
+            <Link href="/orientation">
+              <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('orientation')}}>ORIENTATION</li>
             </Link>
         </ul>
 
@@ -84,10 +87,16 @@ export const NavBar = () => {
                 onClick={() => { settrigger(true); setbuttonPressed('team'); setIsSidebarOpen(false); }}>
                 TEAM
               </li>
-              <Link href="/yearbook">
+              {/* <Link href="/yearbook">
                 <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300'
                   onClick={() => { settrigger(true); setbuttonPressed('yearbook'); setIsSidebarOpen(false); }}>
                   YEARBOOK
+                </li>
+              </Link> */}
+              <Link href="/orientation">
+                <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300'
+                  onClick={() => { settrigger(true); setbuttonPressed('orientation'); setIsSidebarOpen(false); }}>
+                  ORIENTATION
                 </li>
               </Link>
             </ul>
