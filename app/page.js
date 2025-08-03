@@ -212,7 +212,7 @@ export default function Home() {
       message: "We're not just a team, we're a family, forging a stronger bond with everything we do. What we build here isn't just work - it's love, trust, and legacy in the making!",
     },
 
-    { image: "img/akshath.jpg", 
+    { image: "img/akshath.png", 
       name: "AKSHATH BHAMU",
       position: "VICE PRESIDENT",
       message: "Might geneuinly have some of the best connections on here , the people are great, the vibes are immaculate, all in all dont join if youre a loser. peace", 
