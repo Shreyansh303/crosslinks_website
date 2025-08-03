@@ -83,7 +83,6 @@ const Carousel = ({ slides }) => {
                           <div className="imageWrapper flex w-full justify-center items-center">
                             <div className="imageCircle w-30 h-30 md:w-40 md:h-40 p-3">
                               <img
-                                loading='lazy'
                                 src={slide.image}
                                 alt={slide.name}
                                 className="w-full h-full rounded-full object-cover"
