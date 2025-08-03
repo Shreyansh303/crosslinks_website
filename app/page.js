@@ -200,7 +200,7 @@ export default function Home() {
 
   const slides = [
 
-    { image: "img/mithilesh.jpg", 
+    { image: "img/mithilesh.png", 
       name: "MITHILESH KOROCHIKAR",
       position: "PRESIDENT, EXTERNAL AFFAIRS",
       message: "Crosslinks = endless opportunities + unmatched experiences. Everything else you hear? Just background noise.", 
@@ -236,13 +236,13 @@ export default function Home() {
        
     },
 
-    { image: "img/prisha.jpg", 
+    { image: "img/prisha.png", 
       name: "PRISHA PRIYA",
       position: "MANAGING EDITOR",
        
     },
 
-    { image: "img/abhinav.jpg", 
+    { image: "img/abhinav.png", 
       name: "ABHINAV KUMAR",
       position: "MANAGING EDITOR",
        
