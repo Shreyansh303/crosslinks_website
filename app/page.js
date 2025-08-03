@@ -200,46 +200,67 @@ export default function Home() {
 
   const slides = [
 
-    { image: "img/slide1.png", 
+    { image: "img/mithilesh.jpg", 
       name: "MITHILESH KOROCHIKAR",
-      position: "PRESIDENT",
-      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      position: "PRESIDENT, EXTERNAL AFFAIRS",
+      message: "Crosslinks = endless opportunities + unmatched experiences. Everything else you hear? Just background noise.", 
     },
 
     { image: "img/slide2.jpg", 
-      name: "MITHILESH KOROCHIKAR",
-      position: "PRESIDENT",
+      name: "UDITA JARODIA",
+      position: "PRESIDENT, MEDIA",
       message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
     },
 
+    { image: "img/akshath.jpg", 
+      name: "AKSHATH BHAMU",
+      position: "VICE PRESIDENT",
+      message: "Might geneuinly have some of the best connections on here , the people are great, the vibes are immaculate, all in all dont join if youre a loser. peace", 
+    },
+
     { image: "img/slide3.jpg", 
-      name: "MITHILESH KOROCHIKAR",
+      name: "GAURI BHARDWAJ",
       position: "VICE PRESIDENT",
       message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
     },
 
-    { image: "img/slide3.jpg", 
-      name: "MITHILESH KOROCHIKAR",
-      position: "VICE PRESIDENT",
-      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+    { image: "img/aryan.jpg", 
+      name: "ARYAN KHUDLAIN",
+      position: "MANAGING EDITOR",
+      message: "moj masti nahi rukni chiye", 
     },
   ];
 
   const cards = [
 
-    { image: "img/slide1.png", 
+    { image: "img/thon.jpg", 
       title: "NSUTTHON",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      description: "The annual flagship event of crosslinks. It consists of orientations, auditions , workshops and competitions organised by various societies. It is a team - based event which promotes teamwork and leadership qualities. Every team is credited with specific points for every participation and win. It is a race of being - THE ULTIMATE FRESHER.", 
     },
 
-    { image: "img/slide2.jpg", 
+    { image: "img/garba.jpg", 
+      title: "GARBA NIGHT",
+      description: "Garba night, a sparkling festive lights and colourful decor with dandiya under the dazzling stars.The university lit up in beautiful purple lights and the vibrant songs echoed through the grounds as the students dressed up in pretty ethnic clothes gathered to dance and have fun.",
+    },
+
+    { image: "img/moksha.jpg", 
       title: "MR. & MS. MOKSHA",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
+      description: "Mr. and Ms. Moksha, an event held at our college, is a celebration of charisma, talent, and personality. This competition showcases the finest qualities of students as they compete for the title with confidence and style.",
     },
 
-    { image: "img/slide3.jpg", 
+    { image: "img/scribble.jpg", 
       title: "SCRIBBLE DAY",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      description: "Scribble Day is a creative see off to our beloved seniors. Cute, funny and some outrageous messages are signed off on t-shirts and even body parts during the event. Together with music and a lot of pictures to capture memories worth many years.", 
+    },
+
+    { image: "img/farewell.jpg", 
+      title: "FAREWELL",
+      description: "Farewell day is a bittersweet occasion, marking the end of an important chapter in one's life and the start of a new journey. We at crosslinks organized a farewell day party bidding them a goodbye and wishing them for a new journey in their lives. Their memories and the bonds they formed will always be remembered and will be cherished.", 
+    },
+
+    { image: "img/alumni.jpg", 
+      title: "ALUMNI MEET",
+      description: "A lovely reunion for all the alumni to reminisce about their good old days together. The alumni gathered to share their experiences with the students and discuss new ideas. The alumni were also facilitated and live music during the evening made the event enjoyable.It was organized in collaboration with Alumni Association, NSUT.", 
     },
 
   ];

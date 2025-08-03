@@ -25,7 +25,7 @@ const Card = ({ image, title, description, index, topOffset }) => {
           alt={title}
           className="absolute h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/20" />
         <h2 className="absolute top-4 left-6 max-[391px]:text-xl max-[480px]:text-2xl text-3xl font-greater-theory text-white md:text-5xl">
           {title}
         </h2>
