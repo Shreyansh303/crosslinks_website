@@ -215,7 +215,7 @@ export default function Home() {
     { image: "img/akshath.png", 
       name: "AKSHATH BHAMU",
       position: "VICE PRESIDENT",
-      message: "Might geneuinly have some of the best connections on here , the people are great, the vibes are immaculate, all in all dont join if youre a loser. peace", 
+      message: "Might genuinely have some of the best connections on here , the people are great, the vibes are immaculate, all in all dont join if youre a loser. peace", 
     },
 
     { image: "img/gauri.jpg", 
