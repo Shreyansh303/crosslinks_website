@@ -206,10 +206,10 @@ export default function Home() {
       message: "Crosslinks = endless opportunities + unmatched experiences. Everything else you hear? Just background noise.", 
     },
 
-    { image: "img/slide2.jpg", 
+    { image: "img/udita.jpg", 
       name: "UDITA JARODIA",
       position: "PRESIDENT, MEDIA",
-      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!",
+      message: "We're not just a team, we're a family, forging a stronger bond with everything we do. What we build here isn't just work - it's love, trust, and legacy in the making!",
     },
 
     { image: "img/akshath.jpg", 
@@ -218,16 +218,34 @@ export default function Home() {
       message: "Might geneuinly have some of the best connections on here , the people are great, the vibes are immaculate, all in all dont join if youre a loser. peace", 
     },
 
-    { image: "img/slide3.jpg", 
+    { image: "img/gauri.jpg", 
       name: "GAURI BHARDWAJ",
       position: "VICE PRESIDENT",
-      message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nobis dicta iusto reiciendis ab, accusamus ratione veniam, perspiciatis, magnam harum voluptates asperiores. Maxime quam id laboriosam ullam, repellendus beatae aspernatur!", 
+      message: "We are not just a PR society we are home—the kind where seniors guide, juniors inspire and bonds turn into lifelong friendships. We hustle hard, party harder, and make every campus event unforgettable.", 
     },
 
     { image: "img/aryan.jpg", 
       name: "ARYAN KHUDLAIN",
       position: "MANAGING EDITOR",
       message: "moj masti nahi rukni chiye", 
+    },
+
+    { image: "img/sneha.jpg", 
+      name: "SNEHA VATS",
+      position: "MANAGING EDITOR",
+       
+    },
+
+    { image: "img/prisha.jpg", 
+      name: "PRISHA PRIYA",
+      position: "MANAGING EDITOR",
+       
+    },
+
+    { image: "img/abhinav.jpg", 
+      name: "ABHINAV KUMAR",
+      position: "MANAGING EDITOR",
+       
     },
   ];
 
@@ -266,13 +284,15 @@ export default function Home() {
   ];
 
   const sampleImages = [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop",
+    "img/gallery1.jpg",
+    "img/gallery2.jpg",
+    "img/gallery3.jpg",
+    "img/gallery4.jpg",
+    "img/gallery5.jpg",
+    "img/gallery6.jpg",
+    "img/gallery7.jpg",
+    "img/gallery8.jpg",
+    "img/gallery9.jpg",
   ];
 
   return (
@@ -352,7 +372,7 @@ export default function Home() {
         <div ref={teamSectionRef} className="events flex flex-col items-center justify-center gap-10 sm:gap-15 my-5">
 
           <span ref={teamRef} className="text-4xl sm:text-5xl md:text-6xl text-center font-greater-theory text-[#1cd30c]">
-            WORDS FROM MEMBERS
+            WORDS FROM CORE
           </span>
 
           <Carousel slides={slides} />

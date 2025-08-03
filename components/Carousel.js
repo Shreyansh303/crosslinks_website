@@ -9,6 +9,7 @@ const Carousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     containScroll: 'trimSnaps',
+    align: 'center',
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
@@ -74,9 +75,9 @@ const Carousel = ({ slides }) => {
                   {slides.map((slide, index) => (
                     <div
                       key={index}
-                      className="flex-[0_0_100%] px-2 min-w-0" // <-- KEY FIX HERE
+                      className="flex-[0_0_100%] px-2 min-w-0 flex items-center justify-center" // <-- KEY FIX HERE
                     >
-                      <div className="relative w-full rounded-2xl overflow-hidden border-2 border-[#ffffff55] hover:border-[#1cd30c] transition duration-300 cursor-grab">
+                      <div className="relative  w-full rounded-2xl overflow-hidden border-2 border-[#ffffff55] hover:border-[#1cd30c] transition duration-300 cursor-grab">
                         <div className="headingContainer flex flex-col justify-between items-center w-full py-5">
                           {/* imageWrapper */}
                           <div className="imageWrapper flex w-full justify-center items-center">
@@ -91,17 +92,17 @@ const Carousel = ({ slides }) => {
                           </div>
 
                           {/* credentialsWrapper */}
-                          <div className="credentialsWrapper flex flex-col md:gap-1 w-full items-center justify-center p-5">
+                          <div className="credentialsWrapper flex flex-col gap-2 md:gap-1 w-full items-center justify-center p-5">
                             <h1 className="text-white text-xl/4.5 sm:text-2xl md:text-3xl/7 text-center font-greater-theory ">
                               {slide.name}
                             </h1>
-                            <h2 className="text-white text-base sm:text-lg md:text-xl tracking-[6] text-center font-nexa-light">
+                            <h2 className="text-white text-base/4 sm:text-lg md:text-xl tracking-[6] text-center font-nexa-light">
                               {slide.position}
                             </h2>
                           </div>
 
                           {/* Message */}
-                          <span className="text-white text-xs sm:text-sm md:text-base text-justify font-main px-5 w-full">
+                          <span className="text-white text-xs sm:text-sm md:text-base text-center font-main px-5 w-full">
                             {slide.message}
                           </span>
                         </div>

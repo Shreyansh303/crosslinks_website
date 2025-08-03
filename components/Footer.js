@@ -23,7 +23,7 @@ export const Footer = () => {
             return 1;
         }
     });
-    navigator.clipboard.writeText('crosslinks@nsut.ac.in')
+    navigator.clipboard.writeText('crosslinks.nsut@gmail.com')
 
     setTimeout(() => {
         setcopyImg(0);
@@ -70,13 +70,13 @@ export const Footer = () => {
                 <div className="contactInfo flex flex-col gap-3 max-[480px]:gap-0 max-[480px]:items-center font-main font-extralight max-[480px]:text-[12px] text-base sm:text-lg md:text-xl ">
                 
                     <div className='flex items-center gap-4 max-[480px]:gap-2'>
-                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/email.svg" alt="" />crosslinks@nsut.ac.in
+                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/email.svg" alt="" />crosslinks.nsut@gmail.com
                     
                         <button onClick={handleCopy} className='flex items-center max-[480px]:hidden gap-1.5 px-5 font-sans sm:text-base'>Copy<img  className='cursor-pointer invert w-4 pt-0.5' src={copyButton[copyImg]} alt="" title='Copy to Clipboard' /></button>
                     </div>
 
                     <div className='flex items-center gap-4 max-[480px]:gap-2'>
-                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/phone.svg" alt="" />+91 9999355552
+                        <img className='invert w-auto max-[480px]:w-3 ' src="/icons/phone.svg" alt="" />+91 8888604009
                     </div>
 
                     <div className='flex items-center gap-4 max-[480px]:gap-2'>
