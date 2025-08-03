@@ -29,19 +29,21 @@ export const NavBar = () => {
               <li className='hover:text-[#1cd30c] hover:cursor-pointer transition duration-300' onClick={() => {settrigger(true); setbuttonPressed('orientation')}}>ORIENTATION</li>
             </Link>
         </ul>
-
-        <button className='hidden md:block listItem'>
+        
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdaVfS-6eW2Ny6I57CvYMWO7GwKoNhDRfkci2bWZMeFbmjDvA/viewform">
+              <button className='hidden md:block listItem'>
             
-            <GradientText
-            colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
-            animationSpeed={8}
-            showBorder={true}
-            className="custom-class"
-            >
-            JOIN US
-            </GradientText>
+                  <GradientText
+                  colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
+                  animationSpeed={8}
+                  showBorder={true}
+                  className="custom-class"
+                  >
+                  JOIN US
+                  </GradientText>
 
-        </button>
+              </button>
+        </Link>
 
         {/* Hamburger Button (only shown when sidebar is closed) */}
           <button
