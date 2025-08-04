@@ -2,216 +2,259 @@
     {
         "name": "CROSSLINKS",
         "date": "4th AUGUST, 4:00 P.M.",
-        "venue": "APJ 11"
+        "venue": "APJ 11",
+        "pptlink": "https://drive.google.com/file/d/1nvE4kAr8qn01ISeNg6xJMmPBUGPSjj5F/view"
     },
     {
         "name": "ECELL",
         "date": "4th AUGUST, 4:30 P.M.",
-        "venue": "APJ 11"
+        "venue": "APJ 11",
+        "pptlink": ""
     },
     {
         "name": "D'CODE",
         "date": "4th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "DEBSOC",
         "date": "4th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "THE DEBUGGING SOCIETY",
         "date": "4th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "DEVCOMM",
         "date": "5th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "AXIOM",
         "date": "5th AUGUST, 4:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "CANVAS",
         "date": "5th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "IEEE",
         "date": "5th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "KALPANA",
         "date": "5th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "THE ALLIANCE",
         "date": "5th AUGUST, 4:00 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "HUMANICA",
         "date": "5th AUGUST, 4:30 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "COE HHTRF",
         "date": "5th AUGUST, 5:00 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "DHIRAH",
         "date": "5th AUGUST, 5:30 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "TATSAM",
         "date": "5th AUGUST, 6:00 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "VENATUS",
         "date": "6th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "TDR",
         "date": "6th AUGUST, 4:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "SUBHASHA",
         "date": "6th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "MIRAGE",
         "date": "6th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "MUDRAKALA",
         "date": "6th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "NAKSHATRA",
         "date": "6th AUGUST, 3:30 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "180DC",
         "date": "6th AUGUST, 4:00 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "IGTS",
         "date": "6th AUGUST, 4:30 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "ASME NSUT",
         "date": "6th AUGUST, 5:00 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "FES",
         "date": "6th AUGUST, 5:30 P.M.",
-        "venue": "Mini Audi"
+        "venue": "Mini Audi",
+        "pptlink": ""
     },
     {
         "name": "SHATRANJ",
         "date": "7th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "AAGAAZ",
         "date": "7th AUGUST, 4:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "JUNOON",
         "date": "7th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "CAPELLA",
         "date": "7th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "ENACTUS",
         "date": "7th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "NCC",
         "date": "7th AUGUST, 4:00 P.M.",
-        "venue": "APJ 11"
+        "venue": "APJ 11",
+        "pptlink": ""
     },
     {
         "name": "TFC",
         "date": "8th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "INTAGLIOS",
         "date": "8th AUGUST, 4:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "CLITCH",
         "date": "8th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "VAJRA",
         "date": "8th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "SHAKESJEER",
         "date": "8th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "ASHWAMEDH (STREET)",
         "date": "11th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "ASHWAMEDH (STAGE)",
         "date": "11th AUGUST, 4:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "THE NSUT QUIZ CLUB",
         "date": "11th AUGUST, 5:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "ARES",
         "date": "11th AUGUST, 5:30 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "GDSC",
         "date": "11th AUGUST, 6:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "SPIC MACAY",
         "date": "12th AUGUST, 2:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     },
     {
         "name": "CRESCENDO",
         "date": "12th AUGUST, 4:00 P.M.",
-        "venue": "Main Audi"
+        "venue": "Main Audi",
+        "pptlink": ""
     }
 ]
