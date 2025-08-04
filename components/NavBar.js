@@ -32,7 +32,7 @@ export const NavBar = () => {
         
               {/* https://docs.google.com/forms/d/e/1FAIpQLSdaVfS-6eW2Ny6I57CvYMWO7GwKoNhDRfkci2bWZMeFbmjDvA/viewform */}
 
-        <a href="https://chat.whatsapp.com/K2ymqbJuDIBBe2QNFld9Sl" target="_blank">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaVfS-6eW2Ny6I57CvYMWO7GwKoNhDRfkci2bWZMeFbmjDvA/viewform" target="_blank">
               <button className='hidden md:block listItem'>
             
                   <GradientText
