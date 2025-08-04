@@ -107,7 +107,7 @@ export const NavBar = () => {
 
             {/* Join Button */}
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaVfS-6eW2Ny6I57CvYMWO7GwKoNhDRfkci2bWZMeFbmjDvA/viewform" target="_blank">
-              <button className='hidden md:block listItem'>
+              <button>
             
                   <GradientText
                   colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
@@ -119,7 +119,7 @@ export const NavBar = () => {
                   </GradientText>
 
               </button>
-            </a>
+        </a>
           </div>
         </div>
 
