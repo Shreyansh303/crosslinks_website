@@ -106,16 +106,20 @@ export const NavBar = () => {
             </ul>
 
             {/* Join Button */}
-            <button>
-              <GradientText
-                colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
-                animationSpeed={8}
-                showBorder={true}
-                className="custom-class"
-              >
-                JOIN US
-              </GradientText>
-            </button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaVfS-6eW2Ny6I57CvYMWO7GwKoNhDRfkci2bWZMeFbmjDvA/viewform" target="_blank">
+              <button className='hidden md:block listItem'>
+            
+                  <GradientText
+                  colors={["#1cd30c", "#E6FF00", "#1cd30c", "#E6FF00", "#1cd30c"]}
+                  animationSpeed={8}
+                  showBorder={true}
+                  className="custom-class"
+                  >
+                  JOIN US
+                  </GradientText>
+
+              </button>
+            </a>
           </div>
         </div>
 
