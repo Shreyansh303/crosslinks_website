@@ -239,6 +239,7 @@ export default function Home() {
     { image: "img/prisha.png", 
       name: "PRISHA PRIYA",
       position: "MANAGING EDITOR",
+      message: "Crosslinks is all about epic events, amazing people, and unforgettable memories. The kind that makes your college journey truly unforgettable!",
        
     },
 
