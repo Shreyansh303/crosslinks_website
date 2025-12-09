@@ -7,13 +7,10 @@ import React, { useEffect } from 'react'
 export default function Yearbook() {
 
   // Navigation
-
   const {trigger, settrigger,buttonPressed, setbuttonPressed} = useTrigger();
-
   const router = useRouter();
 
   useEffect(() => {
-  
       if (trigger){ 
         if (['home', 'aboutUs', 'events', 'team'].includes(buttonPressed)) {
           router.push('/')
@@ -22,15 +19,19 @@ export default function Yearbook() {
           setbuttonPressed('');
         }
       }
-      
     }, [trigger, buttonPressed, router, settrigger, setbuttonPressed])
 
   return (
-    <div className='w-full h-screen flex justify-center items-center'>
-      <button className='downloadYearbook max-[400px]:text-base text-2xl sm:text-4xl font-main font-extralight cursor-pointer border-2 
-      border-[#ffffff55] px-7 py-5 mx-2 rounded-[10rem]'>
+    // CHANGE: replaced w-screen with w-full
+    <div className='w-full min-h-screen overflow-x-hidden flex justify-center items-end pb-50 sm:pb-40 md:pb-25 mask-y-from-85% mask-y-to-100% bg-[#111b15] bg-[url(/img/yearbook_mockup.png)] bg-contain bg-center bg-no-repeat'>
+
+      <a href="https://drive.google.com/file/d/17KzRVk55eU9hWh0iX_uWcbGqfuPJTyXN/view?usp=sharing" target='_blank'>
+        <button className='downloadYearbook max-[400px]:text-base text-xl sm:text-4xl font-main font-extralight cursor-pointer border-2 
+        border-[#ffffff55] px-7 py-5 mx-2 rounded-[10rem] z-100'>
         <ShinyText text="DOWNLOAD YEARBOOK 2025" disabled={false} speed={4} className='custom-class' />
       </button>
+      </a>
+      
     </div>
   )
 }
