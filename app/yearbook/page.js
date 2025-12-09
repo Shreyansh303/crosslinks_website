@@ -23,7 +23,7 @@ export default function Yearbook() {
 
   return (
     // CHANGE: replaced w-screen with w-full
-    <div className='w-full min-h-screen overflow-x-hidden flex justify-center items-end pb-50 sm:pb-40 md:pb-25 mask-y-from-85% mask-y-to-100% bg-[#111b15] bg-[url(/img/yearbook_mockup.png)] bg-contain bg-center bg-no-repeat'>
+    <div className='w-full min-h-screen overflow-x-hidden flex justify-center items-end pb-50 sm:pb-40 md:pb-25 mask-y-from-80% mask-y-to-95% sm:mask-y-from-85% sm:mask-y-to-100% bg-[#111b15] bg-[url(/img/yearbook_mockup.png)] bg-contain bg-center bg-no-repeat'>
 
       <a href="https://drive.google.com/file/d/17KzRVk55eU9hWh0iX_uWcbGqfuPJTyXN/view?usp=sharing" target='_blank'>
         <button className='downloadYearbook max-[400px]:text-base text-xl sm:text-4xl font-main font-extralight cursor-pointer border-2 
